@@ -18,7 +18,7 @@
             <div class="flex justify-between items-center  pt-4">
                 <div  class="flex gap-2 justify-center items-center">
                     <img class=" w-12" src="assets/Group (1).png" alt="">
-                    <p><span  class=" font-bold text-lg">$45000</span> <br>
+                    <p><span  class=" font-bold text-lg">$ <span id="balance">0</span></span> <br>
                         Available Balance</p>
                 </div>
                 <button class="flex items-center justify-center btn"> <img src="assets/Frame.png" alt=""> Log Out</button>
@@ -82,16 +82,16 @@
                                     <label class="label">
                                         <legend class=" font-medium text-base">Amount to Add</legend>
                                     </label>
-                                    <input type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                                    <input id="add-amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
                                   </div>
                                   <div class="form-control">
                                     <label class="label">
                                         <legend class=" font-medium text-base">Pin Number</legend>
                                     </label>
-                                    <input type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                                    <input id="pinNumber" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
                                   </div>
                                   <div class="form-control mt-6">
-                                    <button class="btn btn-primary">Add Money</button>
+                                    <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                                   </div>
                                 </form>
                               </div>
@@ -102,10 +102,7 @@
              </div>
              
         </header>
-        <!-- main -->
-         <main>
-
-         </main>
     </section>
+    <script src="script/main.js"></script>
 </body>
 </html>
