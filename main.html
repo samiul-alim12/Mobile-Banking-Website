@@ -29,11 +29,11 @@
                 <p class=" mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
                 <!-- card box -->
                 <div class="grid grid-cols-3 gap-4 mb-7 cursor-pointer ">
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="add-money-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/wallet 1.png" alt="">
-                        <p>Add Money</p>
+                        <p class="text-center">Add Money</p>
                      </div>
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="cashout-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/send 1.png" alt="">
                         <p class="text-center">Cashout</p>
                      </div>
@@ -56,11 +56,11 @@
                      </div>
                     
                 </div>
-                <!-- add money section -->
+                <!-- form section -->
                  <div>
-                    <h1 class="mb-4 font-semibold text-lgs">Add Money</h1>
-                    <!-- form -->
-                    <div>
+                    <!-- add money form section -->
+                    <div id="add-money">
+                        <h1 class="mb-4 font-semibold text-lgs">Add Money</h1>
                         <div class="">
                             <div class="hero-content flex-col lg:flex-row-reverse">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -98,11 +98,45 @@
                             </div>
                           </div>
                     </div>
+                    <!-- cash out form section -->
+                    <div  id="cash-out">
+                        <h1 class="mb-4 font-semibold text-lgs">Cash Out</h1>
+                    <div>
+                        <div class="hero-content flex-col lg:flex-row-reverse">
+                            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                              <form class="card-body">
+                                <div class="form-control">
+                                  <label class="label">
+                                      <legend class=" font-medium text-base">Agent Number</legend>
+                                  </label>
+                                  <input id="number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                  <label class="label">
+                                      <legend class=" font-medium text-base">Amount to Add</legend>
+                                  </label>
+                                  <input id="add-amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control">
+                                  <label class="label">
+                                      <legend class=" font-medium text-base">Pin Number</legend>
+                                  </label>
+                                  <input id="pinNumber" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                                </div>
+                                <div class="form-control mt-6">
+                                  <button id="add-money-btn" class="btn btn-primary">Withdraw Money</button>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
                  </div>
              </div>
              
         </header>
     </section>
     <script src="script/main.js"></script>
+    <script src="script/toogle.js"></script>
 </body>
 </html>
