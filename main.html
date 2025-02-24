@@ -18,7 +18,7 @@
             <div class="flex justify-between items-center  pt-4">
                 <div  class="flex gap-2 justify-center items-center">
                     <img class=" w-12" src="assets/Group (1).png" alt="">
-                    <p><span  class=" font-bold text-lg">$ <span id="balance">0</span></span> <br>
+                    <p><span  class=" font-bold text-lg">$ <span id="balance">50</span></span> <br>
                         Available Balance</p>
                 </div>
                 <button class="flex items-center justify-center btn"> <img src="assets/Frame.png" alt=""> Log Out</button>
@@ -109,22 +109,22 @@
                                   <label class="label">
                                       <legend class=" font-medium text-base">Agent Number</legend>
                                   </label>
-                                  <input id="number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                                  <input id="cash-out-number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                   <label class="label">
-                                      <legend class=" font-medium text-base">Amount to Add</legend>
+                                      <legend class=" font-medium text-base">Amount</legend>
                                   </label>
-                                  <input id="add-amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                                  <input id="cashout-amount" type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control">
                                   <label class="label">
                                       <legend class=" font-medium text-base">Pin Number</legend>
                                   </label>
-                                  <input id="pinNumber" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                                  <input id="cashout-pinNumber" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
                                 </div>
                                 <div class="form-control mt-6">
-                                  <button id="add-money-btn" class="btn btn-primary">Withdraw Money</button>
+                                  <button id="cashout-btn" class="btn btn-primary">Withdraw Money</button>
                                 </div>
                               </form>
                             </div>
@@ -138,5 +138,6 @@
     </section>
     <script src="script/main.js"></script>
     <script src="script/toogle.js"></script>
+    <script src="script/cashout.js"></script>
 </body>
 </html>
