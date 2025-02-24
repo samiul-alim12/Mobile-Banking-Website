@@ -5,12 +5,23 @@ document.getElementById("add-money-btn").addEventListener("click",function(event
     const pinNumber = document.getElementById("pinNumber").value
     const balance = document.getElementById("balance").innerText;
     const connvertBalance = parseFloat(balance)
+    const number = document.getElementById("number").value
 
     if(pinNumber.length === 4){
-        const sum = connvertBalance + convertAddMoney;
-        document.getElementById("balance").innerText = sum
+        if(convertAddMoney){
+           if(number && number.length === 11){
+            const sum = connvertBalance + convertAddMoney;
+            document.getElementById("balance").innerText = sum
+           }
+           else{
+            alert("enter your 11 digit account number")
+           }
+        }
+        else{
+            alert("please enter your amount")
+        }
     }
     else{
-        console.log("erree")
+        alert("enter valid 4 digit pin number")
     }
 })
