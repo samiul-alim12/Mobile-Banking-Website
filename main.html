@@ -4,8 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Banking</title>
+<!-- tailwind + daisyUI setup -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- setup fontAwesome -->
+<script src="https://kit.fontawesome.com/1abebfece9.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1>yes</h1>
+<body class="bg-slate-800">
+    <section class=" max-w-md min-h-screen mx-auto px-5 bg-slate-200">
+        <!-- header -->
+        <header>
+            <!-- navbar -->
+            <div class="flex justify-between items-center  pt-4">
+                <div  class="flex gap-2 justify-center items-center">
+                    <img class=" w-12" src="assets/Group (1).png" alt="">
+                    <p><span  class=" font-bold text-lg">$45000</span> <br>
+                        Available Balance</p>
+                </div>
+                <button class="flex items-center justify-center btn"> <img src="assets/Frame.png" alt=""> Log Out</button>
+            </div>
+            <!-- banner -->
+             <div>
+                <h1 class=" text-2xl mt-8 mb-3 font-bold">🔥 Welcome to Payooo!</h1>
+                <p class=" mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
+                <!-- card box -->
+                <div class="grid grid-cols-3 gap-4 mb-7 cursor-pointer ">
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/wallet 1.png" alt="">
+                        <p>Add Money</p>
+                     </div>
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/send 1.png" alt="">
+                        <p class="text-center">Cashout</p>
+                     </div>
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/money 1.png" alt="">
+                        <p class="text-center">Transfer Money</p>
+                     </div>
+
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/financial 1.png" alt="">
+                        <p class="text-center">Get Bonus</p>
+                     </div>
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/purse 1.png" alt="">
+                        <p class="text-center">Pay Bill</p>
+                     </div>
+                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                        <img class=" mb-2  w-6 mx-auto" src="assets/transaction 1.png" alt="">
+                        <p class="text-center">Transaction</p>
+                     </div>
+                    
+                </div>
+                <!-- add money section -->
+                 <div>
+                    <h1 class="mb-4 font-semibold text-lgs">Add Money</h1>
+                    <!-- form -->
+                    <div>
+                        <div class="">
+                            <div class="hero-content flex-col lg:flex-row-reverse">
+                              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                                <form class="card-body">
+                                    <legend class=" font-medium text-base">Select a bank</legend>
+                                    <select class="select select-bordered w-full max-w-xs">
+                                        <option disabled selected>Select Bank</option>
+                                        <option>Bkash</option>
+                                        <option>Nagad</option>
+                                        <option>DBBL</option>
+                                      </select>
+                                  <div class="form-control">
+                                    <label class="label">
+                                        <legend class=" font-medium text-base">Bank Account Number</legend>
+                                    </label>
+                                    <input type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                        <legend class=" font-medium text-base">Amount to Add</legend>
+                                    </label>
+                                    <input type="number" placeholder="Add Amount to withdraw" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                        <legend class=" font-medium text-base">Pin Number</legend>
+                                    </label>
+                                    <input type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button class="btn btn-primary">Add Money</button>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                 </div>
+             </div>
+             
+        </header>
+        <!-- main -->
+         <main>
+
+         </main>
+    </section>
 </body>
 </html>
