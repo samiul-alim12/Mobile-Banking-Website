@@ -18,7 +18,7 @@ document.getElementById("add-money-btn").addEventListener("click",function(event
               const p = document.createElement("p");
               p.innerHTML = `
               
-              <div class="flex w-full flex-col my-4 card bg-base-100 items-center justify-center rounded-box p-2 h-20 place-items-center">Added Money form <h2 class=" text-2xl"> ${select} </h2> amount ${amount} from this ${number} account</div> 
+              <div class="flex w-full flex-col my-4 card bg-base-100 items-center justify-center rounded-box p-2 place-items-center">Added Money form <h2 class=" text-2xl"> ${select} </h2> amount ${amount} from this ${number} account</div> 
               `
 
               transactionContainer.appendChild(p)
