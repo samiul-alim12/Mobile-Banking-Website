@@ -50,7 +50,7 @@
                         <img class=" mb-2  w-6 mx-auto" src="assets/purse 1.png" alt="">
                         <p class="text-center">Pay Bill</p>
                      </div>
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="transaction-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/transaction 1.png" alt="">
                         <p class="text-center">Transaction</p>
                      </div>
@@ -64,9 +64,9 @@
                         <div class="">
                             <div class="hero-content flex-col lg:flex-row-reverse">
                               <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                                <form class="card-body">
+                                <form  class="card-body">
                                     <legend class=" font-medium text-base">Select a bank</legend>
-                                    <select class="select select-bordered w-full max-w-xs">
+                                    <select id="select-bank" class="select select-bordered w-full max-w-xs">
                                         <option disabled selected>Select Bank</option>
                                         <option>Bkash</option>
                                         <option>Nagad</option>
@@ -131,6 +131,13 @@
                           </div>
                     </div>
                     </div>
+
+                    <div id="transaction-container">  
+                      <div class="flex items-center justify-between">
+                        <h4 class=" font-semibold text-lg">Transaction History</h4>
+                        <a class=" text-gray-500" href="">View All</a>
+                      </div>
+                      </div>
                  </div>
              </div>
              
