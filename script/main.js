@@ -13,8 +13,6 @@ document.getElementById("add-money-btn").addEventListener("click",function(event
             if(pinNumber.length ===4){
               const  sum = amount + balance;
               innerTextChange("balance",sum)  
-
-
               const p = document.createElement("p");
               p.innerHTML = `
               

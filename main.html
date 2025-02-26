@@ -37,7 +37,7 @@
                         <img class=" mb-2  w-6 mx-auto" src="assets/send 1.png" alt="">
                         <p class="text-center">Cashout</p>
                      </div>
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="transfer-money-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/money 1.png" alt="">
                         <p class="text-center">Transfer Money</p>
                      </div>
@@ -131,6 +131,41 @@
                           </div>
                     </div>
                     </div>
+                    <!-- transfer money section -->
+                    <div  id="transfer-money">
+                      <h1 class="mb-4 font-semibold text-lgs">Transfer Money</h1>
+                  <div>
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                    <legend class=" font-medium text-base">User Account Number</legend>
+                                </label>
+                                <input id="transfer-number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                    <legend class=" font-medium text-base">Amount</legend>
+                                </label>
+                                <input id="transfer-amount" type="number" placeholder="Enter amount to transfer" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                    <legend class=" font-medium text-base">Pin Number</legend>
+                                </label>
+                                <input id="transfer-pinNumber" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="transfer-money-btn" class="btn btn-primary">Send Now</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+
+
 
                     <div id="transaction-container">  
                       <div class="flex items-center justify-between">
@@ -147,5 +182,6 @@
     <script src="script/main.js"></script>
     <script src="script/toogle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transfer.js"></script>
 </body>
 </html>
