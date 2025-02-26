@@ -42,11 +42,11 @@
                         <p class="text-center">Transfer Money</p>
                      </div>
 
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="bonus-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/financial 1.png" alt="">
                         <p class="text-center">Get Bonus</p>
                      </div>
-                    <div class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
+                    <div id="pay-bill-box" class="border border-gray-400 rounded-xl p-5 hover:bg-blue-300">
                         <img class=" mb-2  w-6 mx-auto" src="assets/purse 1.png" alt="">
                         <p class="text-center">Pay Bill</p>
                      </div>
@@ -164,7 +164,67 @@
                         </div>
                   </div>
                   </div>
-
+                  <!-- bonus section -->
+                  <div  id="Bonus-money">
+                    <h1 class="mb-4 font-semibold text-lgs">Get Bonus</h1>
+                <div>
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                          <form class="card-body">
+                            <div class="form-control">
+                              <label class="label">
+                                  <legend class=" font-medium text-base">Enter Bonus Coupon</legend>
+                              </label>
+                              <input id="bonus-amount" type="number" placeholder="Enter Your Coupon" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                              <button id="bonus-btn" class="btn btn-primary">Get Bonus</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <!-- pay bill section -->
+                <div id="pay-bill">
+                  <h1 class="mb-4 font-semibold text-lgs">Pay Bill</h1>
+                  <div class="">
+                      <div class="hero-content flex-col lg:flex-row-reverse">
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                          <form  class="card-body">
+                              <legend class=" font-medium text-base">Select To Pay</legend>
+                              <select id="select-banks" class="select select-bordered w-full max-w-xs">
+                                  <option disabled selected>Select Bank</option>
+                                  <option>Bkash</option>
+                                  <option>Nagad</option>
+                                  <option>DBBL</option>
+                                </select>
+                            <div class="form-control">
+                              <label class="label">
+                                  <legend class=" font-medium text-base">Biller Account Number</legend>
+                              </label>
+                              <input id="pay-number" type="number" placeholder="Enter 11 digit account number" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                              <label class="label">
+                                  <legend class=" font-medium text-base">Amount To Pay</legend>
+                              </label>
+                              <input id="pay-amount" type="number" placeholder="Add Amount to pay" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                              <label class="label">
+                                  <legend class=" font-medium text-base">Pin Number</legend>
+                              </label>
+                              <input id="pay-pin-number" type="number" placeholder="Enter 4 digit pin" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control mt-6">
+                              <button id="pay-btn" class="btn btn-primary">Pay Now</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+              </div>
 
 
                     <div id="transaction-container">  
@@ -183,5 +243,7 @@
     <script src="script/toogle.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transfer.js"></script>
+    <script src="script/bonus.js"></script>
+    <script src="script/paybill.js"></script>
 </body>
 </html>
